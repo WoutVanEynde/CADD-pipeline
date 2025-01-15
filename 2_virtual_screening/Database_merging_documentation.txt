@@ -1,0 +1,17 @@
+#Specs = 205301 molecules
+#Asinex = 323446 molecules
+#Enamine = 2880827 molecules
+#Ambinter = 9405640 molecules
+
+1) Merging of different conformers of same database using mol key (NOT IMPORTING ID DUE TO BEING FAULTY)
+2) Deleting duplicate mol entries
+3) Duplicating mol field and converting of duplicate field to SMILES
+4) Saving SMILES and PH4 fields as PH4_concat.txt
+5) $ awk -F ',' '{print $1"," $5" "$4" "$3" "$2}' PH4_concat.txt > PH4_concatenated.txt
+6) Open PH4_concatenated.txt so MOE makes it a .mdb (IMPORT SMILES AS 'char')
+7) Merging PH4_concatenated.mdb and previously merged database using SMILES key
+8) Sort database based on the seperate PH4's
+9) Delete seperate PH4's and save as final version of that database
+10) Wash molecules to neutralize; NEXT TIME DO DOMINANT 
+11) Delete duplicate mols
+12) Make new SMILES column and delete previous one
