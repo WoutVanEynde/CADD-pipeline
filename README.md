@@ -1,2 +1,2 @@
-# CADD-pipeline
-Computer-aided drug design pipeline using commercial softwares MOE and GOLD.
+# CADD-scripts
+Computer-aided drug design scripts using commercial softwares MOE and GOLD and open-source softwares like ChemmineR and GROMACS.
